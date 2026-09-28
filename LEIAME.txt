@@ -1,0 +1,9 @@
+artigo2.tex, refs.bib, fig_*.pdf : artigo (pdflatex; bibtex; pdflatex; pdflatex)
+codigo/fam2.py      programa fechado (Algoritmo 1) com verificacao simbolica: python3 fam2.py b c
+codigo/wordlevel.py versao em nivel de palavra (Corolario 10):       python3 wordlevel.py b c
+codigo/contaxor.py  Conta-XOR em Python:                              python3 contaxor.py m a b c
+codigo/xorred.c     irredutibilidade, Conta-XOR, censos: ./xorred fam2 5 1100 ; ./xorred fam1 5 1100
+dados/paar150.txt   m a b c dXOR Conta-XOR prof R-Paar prof, todos os membros com m<=150
+dados/fam2_irr.txt  membros irredutiveis da segunda familia (m b c), m<=1100
+dados/fam1_irr.txt  membros irredutiveis da primeira familia (m b c), m<=1100
+dados/tri.txt       graus com trinomio irredutivel (m k)
