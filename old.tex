@@ -48,7 +48,7 @@
 \SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
 
 \title{\textbf{Efficient Closed-Form Reduction for Banegas’ Second Family of Pentanomials}}
-\author{Marcos Tomaszewski \and Ricardo Custódio \and Gustavo Banegas \and Daniel Panario \\[4pt]
+\author{Marcos Tomaszewski \and Ricardo Custódio\\[4pt]
 \small Laboratório de Segurança em Computação (LabSEC)\\
 \small Departamento de Informática e Estatística, Universidade Federal de Santa Catarina\\
 \small Florianópolis, SC, Brazil}
@@ -70,10 +70,9 @@ In this work, we provide a formal analysis of this second family. For \(m=b+2c\)
 \[
 \left\lfloor\frac{m-2}{3c}\right\rfloor+4.
 \]
-Combined with a schoolbook polynomial multiplier, the construction yields a bit-parallel multiplier using \(m^2\) AND gates and \(m^2+m-c-2\) XOR gates, of which \((m-1)^2\) are spent on the product and \(3m-c-3\) on the reduction. For admissible parameters with \(c\) close to \(m/3\), the reduction bound approaches \(8m/3\) XOR gates.
+Combined with a schoolbook polynomial multiplier, the construction yields a bit-parallel multiplier using \(m^2\) AND gates and \(m^2+m-c-2\) XOR gates. For admissible parameters with \(c\) close to \(m/3\), the reduction bound approaches \(8m/3\) XOR gates.
 
-We symbolically verified the reduction construction for all 14,850 members with \(m\le300\). An irreducibility census for \(5\le m\le1100\) found members of the second family in 720 degrees, including 288 degrees for which no irreducible trinomial exists. Among the 405 degrees containing irreducible members of both Banegas families, the best member of the second family has a lower reduction bound in 403. At the NIST binary-field degrees 163 and 571, the best members found in the second family require 440 and 1,528 XOR gates, respectively, compared with the reported counts of 571 and 2,003 for the corresponding NIST pentanomials; at
-degree 283, the remaining NIST pentanomial degree, the second family has no irreducible member..
+We symbolically verified the reduction construction for all 14,850 members with \(m\le300\). An irreducibility census for \(5\le m\le1100\) found members of the second family in 720 degrees, including 288 degrees for which no irreducible trinomial exists. Among the 405 degrees containing irreducible members of both Banegas families, the best member of the second family has a lower reduction bound in 403. At the NIST binary-field degrees 163 and 571, the best members found in the second family require 440 and 1,528 XOR gates, respectively, compared with the reported counts of 571 and 2,003 for the corresponding NIST pentanomials.
 
 \medskip\noindent\textbf{Keywords:} binary finite fields; irreducible pentanomials; modular reduction; XOR circuit complexity; bit-parallel multipliers; polynomial basis
 \end{abstract}
@@ -156,7 +155,7 @@ Results marked \ours{} are new; every other result is cited.
 \section{Background}\label{sec:background}
 % ==================================================================
 
-We recall the notation and known results used in the rest of the paper.
+Everything in this section is from the literature.
 
 \subsection{Reduction and its cost}
 
