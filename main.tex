@@ -73,7 +73,7 @@ In this work, we provide a formal analysis of this second family. For \(m=b+2c\)
 Combined with a schoolbook polynomial multiplier, the construction yields a bit-parallel multiplier using \(m^2\) AND gates and \(m^2+m-c-2\) XOR gates, of which \((m-1)^2\) are spent on the product and \(3m-c-3\) on the reduction. For admissible parameters with \(c\) close to \(m/3\), the reduction bound approaches \(8m/3\) XOR gates.
 
 We symbolically verified the reduction construction for all 14,850 members with \(m\le300\). An irreducibility census for \(5\le m\le1100\) found members of the second family in 720 degrees, including 288 degrees for which no irreducible trinomial exists. Among the 405 degrees containing irreducible members of both Banegas families, the best member of the second family has a lower reduction bound in 403. At the NIST binary-field degrees 163 and 571, the best members found in the second family require 440 and 1,528 XOR gates, respectively, compared with the reported counts of 571 and 2,003 for the corresponding NIST pentanomials; at
-degree 283, the remaining NIST pentanomial degree, the second family has no irreducible member..
+degree 283, the remaining NIST pentanomial degree, the second family has no irreducible member.
 
 \medskip\noindent\textbf{Keywords:} binary finite fields; irreducible pentanomials; modular reduction; XOR circuit complexity; bit-parallel multipliers; polynomial basis
 \end{abstract}
@@ -534,7 +534,8 @@ $5\le m\le150$. Among the $3\,541$ generic members:
   \item for $b\ge6c$ the greedy count exceeds the closed form in a growing fraction of
         cases ($392$ of $1\,350$), by up to $112$ XORs.
 \end{enumerate}
-Randomising ties changed the outcome in only one case. For special members the greedy
+Randomising ties improved the greedy count in $212$ generic members, all with $b\ge6c$
+and by at most $12$ XORs, but closed the gap to the closed form in only one of them. For special members the greedy
 algorithm can be shorter (for instance $\tfrac{12}{5}m-2$ when $b=3c$), as expected for
 polynomials of the form $G(x^g)$ with a short $G$.
 \end{observation}
